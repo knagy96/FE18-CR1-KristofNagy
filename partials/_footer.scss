@@ -1,0 +1,45 @@
+.navbot {
+    padding: 0px;
+    background-color: $text-color;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        color: $text-color2;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+    .border {
+        border-right: 1px solid $text-color2;
+        padding-right: 10em;
+        padding-left: 10em;
+    }
+    .noborder {
+        padding-right: 10em;
+        padding-left: 0;
+    }
+}
+
+footer {
+    overflow: hidden;
+    width: 100%;
+    background-color: $text-color;
+    .footerbot {
+        color: $text-color2;
+        .icon {
+            display: flex;
+            justify-content: center;
+            i {
+                margin: 0px;
+                color: $text-color2;
+                font-size: 2em;
+            }
+        }
+        .copyright {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+        .container {
+            display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            @include ChangeCols(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 2em;
+            row-gap: 3em;
+            margin: 5em 5em 5em 5em;
+            .img-container {
+                position: relative;
+                width: 100%;
+                height: 350px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .food-name {
+                    width: 100%;
+                    height: 60px;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    text-align: center;
+                    color: $text-color2;
+                    background-color: $text-color;
+                    opacity: 0.8;
+                    margin: 0;
+                }
+            }
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
